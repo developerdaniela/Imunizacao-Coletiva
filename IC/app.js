@@ -1,9 +1,12 @@
 #!/usr/bin/env node
+// Dear myself,
+// I am really sorry,
+// I hate this, I can't code this right
+// nanospinner doens't work
 
 // Imports
 import chalk from 'chalk';
 import figlet from 'figlet';
-import ora from 'ora';
 import { createSpinner } from 'nanospinner';
 import inquirer from 'inquirer';
 import gradient from 'gradient-string';
