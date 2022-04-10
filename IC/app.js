@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// Imports
 import chalk from 'chalk';
 import figlet from 'figlet';
 import { createSpinner } from 'nanospinner';
@@ -7,14 +8,14 @@ import inquirer from 'inquirer';
 import gradient from 'gradient-string';
 import chalkAnimation from 'chalk-animation';
 
+// Main Code
+// Welcome
 let PlayerName;
 
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
-    const rainbowTitle = chalkAnimation.rainbow(
-        'Imunização Coletiva \n'
-    );
+    const rainbowTitle = chalkAnimation.rainbow('Imunização Coletiva \n');
     await sleep();
     rainbowTitle.stop();
 
@@ -26,9 +27,13 @@ async function welcome() {
     `)
 }
 
+// Awaits
+
 await welcome()
 await askName()
 await winner()
+
+// Ask Names
 
 async function askName() {
     const anwsers = await inquirer.prompt({
@@ -43,10 +48,14 @@ async function askName() {
     PlayerName = anwsers.player_name;
 }
 
+// Loading Spinner
+
 const spinner = createSpinner('Carregando Jogo...\n').start();
 await sleep();
 
 spinner.success({ text: `Jogo Carregado!` });
+
+// Win Function
 
 function winner() {
     console.clear();
@@ -58,3 +67,5 @@ function winner() {
     process.exit(0);
     });
   }
+
+  // ba bye
