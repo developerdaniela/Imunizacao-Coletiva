@@ -1,0 +1,8 @@
+function win() {
+ console.clear();
+ const msg = `Congrats ${PlayerName} !`
+ 
+ figlet(msg, (err, data)) => {
+     console.log(gradient.pastel.multiline(data));
+ }
+}
