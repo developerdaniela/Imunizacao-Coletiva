@@ -4,6 +4,8 @@
 // I hate this, I can't code this right
 // nanospinner doens't work
 
+// im crying
+
 // Imports
 import chalk from 'chalk';
 import figlet from 'figlet';
