@@ -15,9 +15,9 @@ let PlayerName;
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 async function welcome() {
-    const rainbowTitle = chalkAnimation.rainbow('Imunização Coletiva \n');
-    await sleep();
-    rainbowTitle.stop();
+    const RainbowTitle = chalkAnimation.rainbow('Imunização Coletiva')
+    await sleep()
+    RainbowTitle.stop
 
     console.log(`
     ${chalk.bgBlueBright('Como Jogar')}
@@ -49,13 +49,8 @@ async function askName() {
 }
 
 // Loading Spinner
-
 const spinner = createSpinner('Carregando Jogo...\n').start();
-await sleep();
-
-spinner.success({ text: `Jogo Carregado!` });
-
-// Win Function
+await sleep()
 
 function winner() {
     console.clear();
