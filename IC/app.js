@@ -3,6 +3,7 @@
 // Imports
 import chalk from 'chalk';
 import figlet from 'figlet';
+import ora from 'ora';
 import { createSpinner } from 'nanospinner';
 import inquirer from 'inquirer';
 import gradient from 'gradient-string';
@@ -49,8 +50,7 @@ async function askName() {
 }
 
 // Loading Spinner
-const spinner = createSpinner('Carregando Jogo...\n').start();
-await sleep()
+
 
 function winner() {
     console.clear();
