@@ -1,0 +1,39 @@
+{
+  "name": "ic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "chalk-animation": "^1.3.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^1.2.0",
+    "inquirer": "^8.2.2",
+    "nanospinner": "^1.1.0"
+  },
+  "scripts": {
+    "test": "ic"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://www.github.com/developerdaniela/imunizacao-coletiva"
+  },
+  "keywords": [
+    "imunizacao",
+    "coletiva",
+    "collective",
+    "imunization",
+    "fgclue",
+    "developerdaniela",
+    "clue",
+    "daniela",
+    "virus",
+    "covid",
+    "covid19",
+    "19",
+    "javascript"
+  ],
+  "author": "fgclue",
+  "license": "Unlicense"
+}
